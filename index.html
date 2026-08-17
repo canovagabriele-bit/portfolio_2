@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Gabriele Canova — electronic music, sound art and interactive systems." />
+  <title>Gabriele Canova — Selected Works</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Home">GC<span>°</span></a>
+    <nav class="nav">
+      <button class="nav-button" data-goto="index">Index</button>
+      <a href="assets/docs/tesi.pdf" target="_blank" rel="noopener">Thesis</a>
+      <button class="nav-button" id="printBtn">PDF</button>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="slides">
+    <section class="slide hero" id="home" data-label="Home">
+      <img class="hero-image" src="assets/img/acid.jpg" alt="Visualizzazione astratta di forme d'onda" />
+      <div class="hero-overlay"></div>
+      <div class="hero-grid">
+        <div class="kicker">Selected works · 2022—2026</div>
+        <h1><span>Gabriele</span><span>Canova</span></h1>
+        <div class="hero-footer">
+          <p>Electronic music<br>Sound art<br>Interactive systems</p>
+          <button class="text-link" data-next>Enter portfolio ↘</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide statement" id="index" data-label="Practice">
+      <div class="slide-number">02 / 09</div>
+      <div class="statement-grid">
+        <div>
+          <div class="eyebrow">Practice</div>
+          <h2>Sound as<br><em>project.</em></h2>
+        </div>
+        <div class="statement-copy">
+          <p id="statementText"></p>
+          <div class="index-list" id="indexList"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide feature" id="permanente" data-label="Permanente Inizio">
+      <div class="slide-number">03 / 09</div>
+      <div class="feature-media"><img src="assets/img/permanente_score.jpg" alt="Partitura di Permanente Inizio"></div>
+      <div class="feature-copy">
+        <div class="eyebrow">01 · Composition / Live electronics</div>
+        <h2>Permanente<br><em>Inizio</em></h2>
+        <p>Arpa, arpa preparata e live electronics. Un dispositivo performativo in cui il gesto acustico viene catturato, trasformato e restituito come memoria.</p>
+        <button class="project-link" data-project="permanente-inizio">Open project <span>↗</span></button>
+      </div>
+    </section>
+
+    <section class="slide studies" id="studies" data-label="Studies">
+      <div class="slide-number">04 / 09</div>
+      <div class="section-heading">
+        <div class="eyebrow">02 · Studies / Constraints</div>
+        <h2>Material,<br>form, <em>listening.</em></h2>
+        <p>Una serie di studi costruiti attraverso vincoli diversi: oggetto concreto, sintesi, voce e paesaggio sonoro.</p>
+      </div>
+      <div class="study-grid" id="studyGrid"></div>
+    </section>
+
+    <section class="slide space" id="space" data-label="Space & Interaction">
+      <div class="slide-number">05 / 09</div>
+      <div class="section-heading compact">
+        <div class="eyebrow">03 · Space / Interaction</div>
+        <h2>Space is<br>a <em>parameter.</em></h2>
+      </div>
+      <div class="project-columns" id="spaceProjects"></div>
+    </section>
+
+    <section class="slide design" id="design" data-label="Body & Design">
+      <div class="slide-number">06 / 09</div>
+      <div class="split-title">
+        <div class="eyebrow">04 · Body / Design</div>
+        <h2>Sound enters<br><em>the scene.</em></h2>
+      </div>
+      <div class="duo-grid" id="designProjects"></div>
+    </section>
+
+    <section class="slide image" id="image" data-label="Sound & Image">
+      <div class="slide-number">07 / 09</div>
+      <div class="section-heading compact">
+        <div class="eyebrow">05 · Sound / Image</div>
+        <h2>Image becomes<br><em>listening.</em></h2>
+      </div>
+      <div class="image-grid" id="imageProjects"></div>
+    </section>
+
+    <section class="slide voice" id="voice" data-label="Voice & Production">
+      <div class="slide-number">08 / 09</div>
+      <div class="voice-image"><img src="assets/img/production.jpg" alt="Visuale astratta per produzione musicale"></div>
+      <div class="voice-copy">
+        <div class="eyebrow">06 · Voice / Production</div>
+        <h2>Voice,<br>word,<br><em>identity.</em></h2>
+        <div class="voice-projects" id="voiceProjects"></div>
+      </div>
+    </section>
+
+    <section class="slide archive" id="contact" data-label="Archive & Contact">
+      <div class="slide-number">09 / 09</div>
+      <div class="archive-grid">
+        <div>
+          <div class="eyebrow">Research archive</div>
+          <h2>Open<br><em>processes.</em></h2>
+          <div class="archive-links" id="archiveProjects"></div>
+        </div>
+        <div class="contact-block">
+          <p>Portfolio conceived as a living archive. Projects, links and media can be replaced or extended without changing the visual system.</p>
+          <a class="email" id="emailLink" href="#">Email ↗</a>
+          <div class="contact-meta">
+            <span>Turin / Italy</span>
+            <span>Electronic music · sound art · technology</span>
+            <a href="assets/docs/tesi.pdf" target="_blank" rel="noopener">Thesis PDF ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="slide-controls" aria-label="Slide navigation">
+    <button id="prevBtn" aria-label="Previous slide">↑</button>
+    <span id="progress">01 / 09</span>
+    <button id="nextBtn" aria-label="Next slide">↓</button>
+  </div>
+
+  <dialog id="projectDialog" class="project-dialog">
+    <button class="dialog-close" id="dialogClose" aria-label="Close">×</button>
+    <div class="dialog-media"><img id="dialogImage" alt=""></div>
+    <div class="dialog-copy">
+      <div class="dialog-meta" id="dialogMeta"></div>
+      <h3 id="dialogTitle"></h3>
+      <p id="dialogSummary"></p>
+      <div class="tag-row" id="dialogTags"></div>
+      <div class="audio-stack" id="dialogAudio"></div>
+      <div class="link-row" id="dialogLinks"></div>
+    </div>
+  </dialog>
+
+  <script src="data/projects.js"></script>
+  <script src="site.js"></script>
+</body>
+</html>
